@@ -3,9 +3,9 @@ export const Statistics = ({ stats, title }) => {
   return (
     <section class="statistics">
       <h2 class="title">{title && title}</h2>
-      <ul>
+      <ul class="stat-list">
         {stats.map(stat => (
-          <li key={stat.id}>
+          <li class="item" key={stat.id}>
             <StatisticsCard stat={stat} />
           </li>
         ))}
