@@ -4,6 +4,8 @@ import { Statistics } from './Statistics';
 import data from '../data.json';
 import { FriendList } from './FriendList';
 import friends from '../friends.json';
+import { TransactionHistory } from './TransactionHistory';
+import transactions from '../transactions.json';
 export const App = () => {
   return (
     <div
@@ -16,7 +18,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Profile
+      {/* <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
@@ -24,7 +26,8 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics stats={data} title="Upload stats" />
-      <FriendList friends={friends} />
+      <FriendList friends={friends} /> */}
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
