@@ -1,4 +1,4 @@
-export const Statistics_card = ({ stat: { id, label, percentage } }) => {
+export const StatisticsCard = ({ stat: { id, label, percentage } }) => {
   return (
     <section class="statistics">
       <span class="label">{label}</span>

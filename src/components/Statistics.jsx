@@ -1,4 +1,4 @@
-import { Statistics_card } from './Statistics_card';
+import { StatisticsCard } from './StatisticsCard';
 export const Statistics = ({ stats, title }) => {
   return (
     <section class="statistics">
@@ -6,7 +6,7 @@ export const Statistics = ({ stats, title }) => {
       <ul>
         {stats.map(stat => (
           <li key={stat.id}>
-            <Statistics_card stat={stat} />
+            <StatisticsCard stat={stat} />
           </li>
         ))}
       </ul>
