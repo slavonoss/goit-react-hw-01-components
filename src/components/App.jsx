@@ -9,14 +9,14 @@ import transactions from '../components/TransactionHistory/transactions.json';
 export const App = () => {
   return (
     <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
+    // style={{
+    //   height: '100vh',
+    //   display: 'flex',
+    //   justifyContent: 'center',
+    //   alignItems: 'center',
+    //   fontSize: 40,
+    //   color: '#010101',
+    // }}
     >
       <Profile
         username={user.username}
@@ -25,9 +25,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics stats={data} title="Upload stats" />
+      {/* <Statistics stats={data} title="Upload stats" />
       <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />
+      <TransactionHistory items={transactions} /> */}
     </div>
   );
 };
